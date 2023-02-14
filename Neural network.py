@@ -96,7 +96,7 @@ print(len(tags_padded_train[0]))
 
 wordcloud_title = WordCloud(width = 800, height = 800,
                 background_color ='white',
-                min_font_size = 10).generate(str(t.word_index))
+                min_font_size = 10).generate(' '.join(t.word_index))
 
 # plot the WordCloud image for title                    
 plt.figure(figsize = (8, 8), facecolor = None)
@@ -108,7 +108,7 @@ plt.show()
 
 wordcloud_tags = WordCloud(width = 800, height = 800,
                 background_color ='white',
-                min_font_size = 10).generate(str(t2.word_index))
+                min_font_size = 10).generate(' '.join(t2.word_index))
  
 # plot the WordCloud image for tags                    
 plt.figure(figsize = (8, 8), facecolor = None)
